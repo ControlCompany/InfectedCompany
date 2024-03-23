@@ -4,10 +4,10 @@ ___
 
 > # *NOTE: All players will need the mod installed to play together*
 
-> ## This mod is still in beta. Please report any bugs and issues you encountered while using the mod by creating an issue on the [official GitHub repo issues page](https://github.com/InfectedCompany/InfectedCompany/issues). Thank you!
+> ## This mod is still in beta. Please report any bugs and issues you encountered while using the mod by creating an issue on the [official GitHub repo issues page](https://github.com/ControlCompany/InfectedCompany/issues). Thank you!
 
 ## Infected Company
-- **Trust noone.** One or more of your crewmates are infected! Trust noone, collect scrap and survive!
+- **Trust nobody.** One or more of your crewmates are infected! Trust nobody, collect scrap and survive!
 - **New items.** Adds new items to the game: **incendiary grenade**, **infected detector** and **handheld radar**.
 - **Quarantine phase.** Can you survive the facility lockdown?
 - **Lobby size support.** Compatible with lobby size enhancement mods! The game will scale accordingly.
@@ -25,9 +25,10 @@ The round quota will increase along the normal game's **profit quota**. The surv
 The objective is to prevent survivors from meeting the round quota. You're given many tools to do so such as becoming a monster yourself :)
 
 ## Game phases
+> ### This mod works with lobby size modification mods! By default there is an infected for every 3.5 players, for e.g. a lobby with 7 people will have 2 infected chosen at random.
 
 ### Start phase
-- You will need at least 3 players in the lobby to start the game. **The host is able to configure this value**
+- ### **You will need at least 3 players in the lobby to start the game. **The host is able to configure this value****
 - Once the ship lands, random players in the lobby will be chosen as the infected
 - The more players the lobby has the more will be chosen as infected. **The host is able to configure this value (default `3.5 players for each infected`)**
 
@@ -42,7 +43,7 @@ The quarantine phase begins when there is at least a single active infected mons
 and ends when they are all neutralized or if the infection/insanity recedes. The facility is put into lockdown mode during quarantine:
 
 - An alarm and announcer will signal the start and end of the quarantine phase
-- Facility entrances and emergency exits are locked
+- Facility **main** entrances are locked, emergency exits remain unlocked from within the facility
 - Teleporters are disabled
 - Ship monitors are disabled
 - Walkie-talkies are disabled
@@ -82,7 +83,7 @@ Player scores will be recorded and displayed in a leaderboard found in the ship.
 - Cannot be bought and must be found as a rare drop within the facility
 - Single-use scan, once used you cannot recharge it
 - Only the person who used the scan will know the result. This opens up potential deception tactics ;)
-- The charge is consumed even if noone was within the range of the scan or if they run out of its range, don't waste it!
+- The charge is consumed even if no one was within the range of the scan or if they run out of its range, don't waste it!
 - It will show a positive infected reading only if the infected has a high insanity level. The infected can avoid a positive reading by staying low
 
 ### Handheld Radar
@@ -106,18 +107,20 @@ Player scores will be recorded and displayed in a leaderboard found in the ship.
 Several gameplay balances were changed from the original game to improve the game pacing. The following changes are applied:
 
 	1. Days are 30% longer
-	2. Starting quota is 50% higher
-	3. New profit quotas will increase ~15% more
+	2. You will new games start with 90 credits instead of 60
+	3. New profit quotas will increase at a slower rate
 	4. Maps are 50% larger and have 50% more scrap
 	5. Maps will spawn 25% more monsters
+	6. You cannot enter the facility from emergency exits
 
 ## Host config
 
 | Option | Description |
 | ----------- | ----------- |
+| `tag_public_server` | Tag your public server with `[INFECTED COMPANY]` (default `true`)
 | `players_per_infected` | Number of players per infected (min. 1). For example, if this is 3.5 then every 3.5 players another will be chosen as an infected. There is always at least 1 infected in the game (default `3.5`)
 | `number_of_players_required_to_start` | Number of players required to start the game (min. 1) (default `3`)
-| `min_round_quota_for_survivor_win` | Minimum quota for the round for survivors to win (default `250`)
+| `min_round_quota_for_survivor_win` | Minimum quota for the round for survivors to win (default `200`)
 
 ## Keybind configuration
 If you want to rebind the keybindings you can do so by modifying the `BepInEx/config/InfectedCompany.InfectedCompany.cfg` file. If you don't see this file then **you must start the game at least once to generate this file**.
@@ -170,9 +173,12 @@ Yes.
 ### How do I rebind my keys?
 See section on [Keybind configuration](#keybind-configuration).
 
+### Does the mod work for Challenge moons?
+No, the mod is disabled for challenge moons.
+
 ## Report bugs/issues/requests
 
-Please report any bugs and issues you encountered while using the mod or make a request by creating an issue on the [official GitHub repo issues page](https://github.com/InfectedCompany/InfectedCompany/issues). Thank you! :)
+Please report any bugs and issues you encountered while using the mod or make a request by creating an issue on the [official GitHub repo issues page](https://github.com/ControlCompany/InfectedCompany/issues). Thank you! :)
 
 ### v0.0.9
 - Initial release
