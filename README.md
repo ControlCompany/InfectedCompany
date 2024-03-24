@@ -39,6 +39,8 @@ The objective is to prevent survivors from meeting the round quota. You're given
 - The qurantine phase begins when there is at least a single active infected roaming inside the facility
 
 ### Quarantine phase
+> ### When quarantine phase ends, any infected that hasn't activated monster mode will lose 65% of their insanity
+
 The quarantine phase begins when there is at least a single active infected monster **inside the facility**
 and ends when they are all neutralized or if the infection/insanity recedes. The facility is put into lockdown mode during quarantine:
 
@@ -50,12 +52,13 @@ and ends when they are all neutralized or if the infection/insanity recedes. The
 - The ship terminal is disabled
 - Facility lights will switch off and emergency lights will switch on
 
+
 ### Endgame phase and scoring
 The game ends when any of the following happens:
 
-	1. The survivors collect and secure enough scrap to meet the round quota **(survivors win)**
-	2. All the survivors die **(infected wins)**
-    3. The ship leaves without meeting the round quota **(infected wins)**
+	1. The survivors collect and secure enough scrap to meet the round quota (survivors win)
+	2. All the survivors die (infected wins)
+    3. The ship leaves without meeting the round quota (infected wins)
 
 
 
